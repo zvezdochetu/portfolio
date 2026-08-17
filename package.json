@@ -1,0 +1,24 @@
+{
+  "name": "my-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "unocss": "^66.7.5",
+    "vitepress": "^1.6.4",
+    "vitepress-theme-blog": "^0.0.3-beta.1"
+  },
+  "dependencies": {
+    "vitepress-theme-tui": "^0.0.13"
+  }
+}

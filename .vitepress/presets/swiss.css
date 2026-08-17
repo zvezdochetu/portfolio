@@ -1,0 +1,132 @@
+/* .vitepress/theme/custom.css — Швейцарская плакатная редакция */
+
+/* Светлая тема (Light Mode — Теплая бумага / Терракота) */
+:root {
+  --vp-c-bg: #fbf9f5;
+  --vp-c-bg-alt: #f3efe6;
+  --vp-c-bg-elv: #ffffff;
+  --vp-c-text-1: #2b2826;
+  --vp-c-text-2: #59534f;
+  
+  --vp-c-brand-1: #c85a32; /* Тёплый терракотовый */
+  --vp-c-brand-2: #a74320;
+  --vp-c-brand-3: #873215;
+
+  /* Переменные брендовых кнопок VitePress (перебивают синий цвет по умолчанию) */
+  --vp-button-brand-bg: #c85a32;
+  --vp-button-brand-border: #c85a32;
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-hover-bg: #a74320;
+  --vp-button-brand-hover-border: #a74320;
+  --vp-button-brand-hover-text: #ffffff;
+  --vp-button-brand-active-bg: #873215;
+
+  --vp-font-family-base: 'Georgia', 'Times New Roman', serif;
+
+  /* Мягкие плакатные тени и рамки */
+  --custom-border-color: rgba(200, 90, 50, 0.2);
+  --custom-shadow: 0 4px 16px rgba(43, 40, 38, 0.05);
+  --custom-shadow-hover: 0 8px 24px rgba(200, 90, 50, 0.15);
+}
+
+/* Тёмная тема (Dark Mode — Тёплый графит / Эспрессо) */
+.dark {
+  --vp-c-bg: #1c1a19;
+  --vp-c-bg-alt: #24211f;
+  --vp-c-bg-elv: #2c2826;
+  --vp-c-text-1: #eee8e1;
+  --vp-c-text-2: #b5aba0;
+
+  --vp-c-brand-1: #e07148; /* Высветленный кораллово-терракотовый */
+  --vp-c-brand-2: #f28b65;
+  --vp-c-brand-3: #ff9e79;
+
+  /* Переменные брендовых кнопок для темной темы */
+  --vp-button-brand-bg: #e07148;
+  --vp-button-brand-border: #e07148;
+  --vp-button-brand-text: #1c1a19; /* Контрастный темный текст на терракотовой кнопке */
+  --vp-button-brand-hover-bg: #f28b65;
+  --vp-button-brand-hover-border: #f28b65;
+  --vp-button-brand-hover-text: #1c1a19;
+
+  --custom-border-color: rgba(224, 113, 72, 0.22);
+  --custom-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  --custom-shadow-hover: 0 8px 28px rgba(224, 113, 72, 0.22);
+}
+
+/* --- Аккуратная плакатная типографика --- */
+h1, h2, h3, .vp-doc h1, .vp-doc h2, .VPHero .name {
+  font-family: 'Georgia', 'Playfair Display', serif !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.02em;
+}
+
+.VPHero .name {
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* --- Главная кнопка (GitHub / Primary) --- */
+.VPButton.brand {
+  background-color: var(--vp-button-brand-bg) !important;
+  border-color: var(--vp-button-brand-border) !important;
+  color: var(--vp-button-brand-text) !important;
+  font-weight: 600 !important;
+  border-radius: 12px !important;
+  box-shadow: var(--custom-shadow);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.VPButton.brand:hover {
+  background-color: var(--vp-button-brand-hover-bg) !important;
+  border-color: var(--vp-button-brand-hover-border) !important;
+  color: var(--vp-button-brand-hover-text) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--custom-shadow-hover);
+}
+
+/* --- Вторичная кнопка (PDF / Alt) --- */
+.VPButton.alt {
+  background-color: var(--vp-c-bg-alt) !important;
+  border: 1px solid var(--custom-border-color) !important;
+  color: var(--vp-c-text-1) !important;
+  border-radius: 12px !important;
+  font-weight: 500 !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.VPButton.alt:hover {
+  background-color: var(--vp-c-bg-elv) !important;
+  border-color: var(--vp-c-brand-1) !important;
+  color: var(--vp-c-brand-1) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--custom-shadow-hover);
+}
+
+/* --- Плакатные карточки Features --- */
+.VPFeature, .VPDoc .custom-block {
+  border-radius: 16px !important;
+  border: 1px solid var(--custom-border-color) !important;
+  background-color: var(--vp-c-bg-alt) !important; /* Цвет как у кнопки "Резюме" */
+  box-shadow: var(--custom-shadow);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.VPFeature:hover {
+  transform: translateY(-3px);
+  border-color: var(--vp-c-brand-1) !important;
+  box-shadow: var(--custom-shadow-hover);
+}
+
+/* --- Ссылки в статьях --- */
+.vp-doc a {
+  color: var(--vp-c-brand-1);
+  text-decoration: underline;
+  text-decoration-color: var(--custom-border-color);
+  text-underline-offset: 4px;
+  transition: all 0.2s ease;
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-brand-2);
+  text-decoration-color: var(--vp-c-brand-1);
+}
