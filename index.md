@@ -11,7 +11,7 @@ hero:
       link: https://github.com/example
     - theme: alt
       text: 📄 Резюме в формате PDF
-      link: /cv.pdf
+      link: ./cv.pdf
       target: _blank
 
 features:
