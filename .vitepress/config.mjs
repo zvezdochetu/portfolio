@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/portfolio/',
   title: "А. К.",
   description: "Личный сайт и портфолио Алисы Котиковой",
   themeConfig: {
