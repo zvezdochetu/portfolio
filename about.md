@@ -19,7 +19,7 @@
 
 <style scoped>
 .profile-section {
-  display: flow-root; /* Запирает float внутри блока и не дает ему налезать на ::: tip ::: */
+  display: flow-root;
   margin-bottom: 24px;
 }
 
@@ -28,16 +28,17 @@
   height: 140px;
   border-radius: 16px;
   float: right;
-  margin: 0 0 16px 24px;
+  margin: 12px 0 16px 24px; /* 12px сверху отделяют фото от заголовка */
   object-fit: cover;
   box-shadow: var(--vp-shadow-2);
 }
 
+/* На мобильных сохраняем float, но пропорционально уменьшаем фото */
 @media (max-width: 640px) {
   .profile-avatar {
-    float: none;
-    margin: 0 auto 16px;
-    display: block;
+    width: 96px;
+    height: 96px;
+    margin: 6px 0 12px 14px; /* Компактные отступы для узких экранов */
   }
 }
 </style>
