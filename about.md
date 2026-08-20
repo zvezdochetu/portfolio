@@ -3,7 +3,7 @@
 <div class="profile-section">
 <img src="/ava.png" alt="Иван Петров" class="profile-avatar" />
 
-Я 10 лет проектирую и внедряю **Docs-as-Code** для enterprise-инфраструктуры, API-порталов и инженерных команд. 
+Я 10 лет проектирую .и внедряю **Docs-as-Code** для enterprise-инфраструктуры, API-порталов и инженерных команд. 
 </div>
 
 ::: tip Моя философия
