@@ -23,13 +23,12 @@ jobs:
         with:
           fetch-depth: 0
 
-# --- ПРОВЕРКА С ПОМОЩЬЮ VALE ---
       - name: Run Vale Prose Linter
         uses: errata-ai/vale-action@v2
         with:
           files: '.'
           fail_on_error: true
-          filter_mode: nofilter
+          reporter: github-check # <--- ОБЯЗАТЕЛЬНО ДЛЯ PUSH В MAIN
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

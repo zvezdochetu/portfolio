@@ -1,8 +1,8 @@
 extends: existence
 message: "Точка перед русской буквой в '%s'. Возможно, пропущен пробел после точки."
 level: error
-scope: text
+scope: raw
 raw:
   - '\.\p{Cyrillic}'
 exceptions:
-  - '(?i)\b(т\.д|т\.п|т\.к|и\.о|т\.е|руб)\.'
+  - '(?i)(т\.д|т\.п|т\.к|и\.о|т\.е|руб)\.'
