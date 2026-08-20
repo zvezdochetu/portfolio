@@ -3,6 +3,4 @@ message: "Точка перед русской буквой в '%s'. Возмо�
 level: error
 scope: raw
 raw:
-  - '\.\p{Cyrillic}'
-exceptions:
-  - '(?i)(т\.д|т\.п|т\.к|и\.о|т\.е|н\.в|руб)\.'
+  - '\p{Cyrillic}{2,}\.\p{Cyrillic}'
