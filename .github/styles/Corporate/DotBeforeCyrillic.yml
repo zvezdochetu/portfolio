@@ -3,6 +3,6 @@ message: "Точка перед русской буквой в '%s'. Возмо�
 level: error
 scope: text
 raw:
-  - '(?i)\.[а-яё]'
+  - '\.\p{Cyrillic}'
 exceptions:
   - '(?i)\b(т\.д|т\.п|т\.к|и\.о|т\.е|руб)\.'
