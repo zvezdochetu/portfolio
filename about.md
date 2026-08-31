@@ -13,6 +13,7 @@
 ## Контакты
 
 Связаться со мной можно по почте <writer@example.com> или в соцсетях:
+
 * Профиль с проектами: [GitHub](https://github.com/example "Профиль GitHub")
 * Профессиональный трек: [LinkedIn](https://linkedin.com/in/example "Профиль LinkedIn")
 * Оперативная связь: [Telegram](https://t.me/example "Написать в Telegram")
